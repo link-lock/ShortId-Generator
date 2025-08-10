@@ -148,6 +148,49 @@
             border-radius: 15px;
             margin-bottom: 20px;
         }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .footer-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-text {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
 
         .info h4 {
             margin-bottom: 10px;
@@ -267,6 +310,23 @@
             <h3>Generated a random short IDs:</h3>
             <div class="shortids" id="shortids"></div>
         </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="https://github.com/link-lock/ShortId-Generator" target="_blank" class="footer-link">
+                    <span>📂</span>
+                    Repository
+                </a>
+                <a href="https://github.com/link-lock/" target="_blank" class="footer-link">
+                    <span>👤</span>
+                    GitHub Profile
+                </a>
+            </div>
+            <div class="footer-text">
+                Made with ❤️ for the VLESS/VMESS community
+            </div>
+        </div>
+
     </div>
 
     <script>
